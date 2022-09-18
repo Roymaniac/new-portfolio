@@ -1,0 +1,322 @@
+/*
+ *  TOC:
+ *  01. webfonts and iconfonts
+ *  06. buttons
+ *  09. header styles
+ *  10. home
+ *  13. portfolio
+
+
+
+/* ===================================================================
+ *  01. webfonts and iconfonts - (_document-setup)
+ *
+ * ------------------------------------------------------------------- */
+@import url("font-awesome/css/font-awesome.min.css");
+@import url("micons/micons.css");
+@import url("fonts.css");
+
+
+*{
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------
+ * Spacing - (_document-setup)
+ * ------------------------------------------------------------------- */
+button, .button {
+  margin-bottom: 1.2rem;
+}
+
+/* -------------------------------------------------------------------
+ * pace.js styles - minimal  - (_document-setup.scss)
+ * ------------------------------------------------------------------- */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #6366f1;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 6px;
+}
+
+/* ===================================================================
+ *  06. buttons - (_button-essentials.scss)
+ *
+ * ------------------------------------------------------------------- */
+.button {
+  display: inline-block;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  height: 5.4rem;
+  line-height: 5.4rem;
+  padding: 0 3rem;
+  margin: 0 .3rem 1.0rem 0;
+  background: #000000;
+  color: #222222;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  background: #6366f1;
+  opacity: 0.9;
+  color: #fff;
+  outline: 0;
+  border: 2px solid #6366f1
+}
+
+/* ===================================================================
+ *  09. header styles - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+header {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 700;
+}
+header .row {
+  height: auto;
+  max-width: 1300px;
+  position: relative;
+}
+
+/* -------------------------------------------------------------------
+ * header logo - (_layout.css)
+ * ------------------------------------------------------------------- */
+header .header-logo {
+  position: absolute;
+  left: 32px;
+  top: 42px;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+header .header-logo a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  width: 57px;
+  height: 27px;
+  background: url("../images/logo.png") no-repeat center;
+  background-size: 57px 27px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * header section
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  header .header-logo a {
+    width: 51px;
+    height: 24px;
+    background-size: 51px 24px;
+  }
+}
+
+
+
+/* ===================================================================
+ *  10. home - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#home {
+  width: 100%;
+  height: 100%;
+  background-color: #151515;
+  background-image: url("../images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 804px;
+  position: relative;
+}
+#home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  background-color: #19191b;
+}
+
+.home-content-table {
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: relative;
+  text-align: center;
+}
+
+.home-content-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 500;
+}
+.home-content-tablecell .row {
+  position: relative;
+  padding-top: 8.5rem;
+  padding-bottom: 15rem;
+}
+
+.home-content-tablecell .white-h3{
+  color: #000000;
+}
+.home-content-tablecell h3 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  margin: 0 0 .9rem 0;
+}
+.home-content-tablecell h1 {
+  font-family: "montserrat-bold", serif;
+  font-size: 3.5rem;
+  line-height: 1.133;
+  color: #FFFFFF;
+}
+.home-content-tablecell .more {
+  margin: 4.8rem 0 0 0;
+}
+.home-content-tablecell .more .button {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * home section
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .home-content-tablecell .row {
+    max-width: 600px;
+  }
+  .home-content-tablecell h1 br {
+    display: none;
+  }
+
+@media only screen and (max-width: 600px) {
+  #home {
+    min-height: 702px;
+  }
+
+  .home-content-tablecell .row {
+    max-width: 480px;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+}
+}
+@media only screen and (max-width: 500px) {
+  .home-content-tablecell .row {
+    max-width: 420px;
+  }
+
+}
+@media only screen and (max-width: 400px) {
+  #home {
+    min-height: 654px;
+  }
+
+  .home-content-tablecell .row {
+    padding-top: 10.8rem;
+    padding-bottom: 10.8rem;
+  }
+  .row h1{
+    font-size: 2.7rem;
+  }
+}
+
+
+
+
+/* ===================================================================
+ *  13. portfolio - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#portfolio {
+  background: #FFFFFF;
+  min-height: 800px;
+  position: relative;
+  padding: 0;
+}
+#portfolio .intro-wrap {
+  padding: 15rem 0 21rem;
+  background: #111111;
+}
+#portfolio .section-intro h3 {
+  color: rgba(242, 242, 242, 0.5);
+}
+#portfolio .section-intro h1 {
+  color: #FFFFFF;
+}
+#portfolio .section-intro .lead {
+  color: rgba(242, 242, 242, 0.4);
+}
+#portfolio .portfolio-content {
+  margin-top: -22.2rem;
+}
+#portfolio .bricks-wrapper:before,
+#portfolio .bricks-wrapper:after {
+  content: "";
+  display: table;
+}
+#portfolio .bricks-wrapper:after {
+  clear: both;
+}
+#portfolio .bricks-wrapper .brick {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}
+#portfolio .bricks-wrapper .brick:nth-child(2n+1) {
+  clear: both;
+}
