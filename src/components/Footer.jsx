@@ -1,4 +1,5 @@
 import { FaTwitter, FaYoutube, FaFacebookF, FaGithub } from "react-icons/fa";
+import { socialLinks } from "../info/skill";
 
 const Footer = () => {
   return (
@@ -23,16 +24,32 @@ const Footer = () => {
       </div>
       <div>
         <div className="grid grid-flow-col gap-5">
-          <a href=" " className="hover:text-indigo-500">
+          <a
+            href={socialLinks[0].link}
+            target="blank"
+            className="hover:text-indigo-500"
+          >
             <FaTwitter size={28} />
           </a>
-          <a href=" " className="hover:text-indigo-500">
+          <a
+            href={socialLinks[3].link}
+            target="blank"
+            className="hover:text-indigo-500"
+          >
             <FaYoutube size={28} />
           </a>
-          <a href=" " className="hover:text-indigo-500">
+          <a
+            href={socialLinks[1].link}
+            target="blank"
+            className="hover:text-indigo-500"
+          >
             <FaFacebookF size={28} />
           </a>
-          <a href=" " className="hover:text-indigo-500">
+          <a
+            href={socialLinks[2].link}
+            target="blank"
+            className="hover:text-indigo-500"
+          >
             <FaGithub size={28} />
           </a>
         </div>
