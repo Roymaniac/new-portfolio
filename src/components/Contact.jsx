@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { contact } from "../info/contactForm";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -9,12 +10,19 @@ const Contact = () => {
     e.preventDefault();
     if (!name && !email) {
       alert("Field is required");
+    } else {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: contact({ "form-name": "contact", name, email, message }),
+      })
+        .then(() => alert("Message sent!"))
+        .catch((error) => alert(error));
+      setName("");
+      setEmail("");
+      setMessage("");
+    };
     }
-    console.log(name, email, message);
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
 
   return (
     <section id="contact" className="relative">
@@ -26,7 +34,7 @@ const Contact = () => {
             title="map"
             className="absolute inset-0"
             style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=97+warren+st+new+york+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://www.google.com/maps/embed/v1/place?q=Lagos,+Nigeria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">

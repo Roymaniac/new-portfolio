@@ -20,7 +20,7 @@ const Project = () => {
               href={project.link}
               target="blank"
               key={project.image}
-              className="sm:w-1/2 w-100 p-4"
+              className="sm:w-1/2 sm:h-2/3 w-100 p-4"
             >
               <div className="flex relative">
                 <img
