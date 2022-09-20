@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { contact } from "../info/contactForm";
+import Success from "./Alert/Success";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -16,13 +17,13 @@ const Contact = () => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: contact({ "form-name": "contact", name, email, message }),
       })
-        .then(() => alert("Message sent!"))
+        .then(() => <Success title="Your form has been Sent!" />)
         .catch((error) => alert(error));
       setName("");
       setEmail("");
       setMessage("");
-    };
     }
+  };
 
   return (
     <section id="contact" className="relative">
