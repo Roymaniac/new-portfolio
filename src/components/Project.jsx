@@ -1,41 +1,32 @@
-import { FaCheckCircle } from "react-icons/fa";
 import { projects } from "../info/data";
 
 const Project = () => {
   return (
     <section id="projects" className="text-gray-100 bg-black body-font">
-      <div className="container px-3 py-10 mx-auto text-center lg:px-32">
-        <div className="flex flex-col w-full mb-20">
-          <FaCheckCircle className="mx-auto inline-block w-10 mb-4 text-indigo-500" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            My Portfolio
-          </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Project have done and worked on
-          </p>
-        </div>
-        <div className="mx-auto flex flex-wrap -m-4">
+      <div className="container px-6 py-10 mx-auto">
+        <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+          Portfolio
+        </h1>
+        <p className="mt-4 text-center text-gray-500 dark:text-gray-300">
+          My Work
+        </p>
+        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-2">
           {projects.map((project) => (
-            <a
-              href={project.link}
-              target="blank"
-              key={project.image}
-              className="sm:w-1/2 sm:h-2/3 w-100 p-4"
-            >
-              <div className="flex relative">
-                <img
-                  alt="project"
-                  className="absolute inset-0 w-full md:h-full object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-2 border-gray-900 bg-black opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+            <a href={project.link} target="blank" key={project.image}>
+              <div
+                className="overflow-hidden bg-cover rounded-lg cursor-pointer h-full w-full lg:w-full lg:h-72 group"
+                style={{ backgroundImage: `url(${project.image})` }}
+              >
+                <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-md bg-gray-800/60 group-hover:opacity-100">
+                  <h2 className="mt-4 text-2xl font-semibold text-white capitalize">
                     {project.subtitle}
                   </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                  <p className="mt-2 text-md text-gray-100">
+                    {project.description}
+                  </p>
+                  <p className="mt-2 text-lg font-bold tracking-wider text-indigo-500 uppercase ">
                     {project.title}
-                  </h1>
-                  <p className="leading-relaxed text-md">{project.description}</p>
+                  </p>
                 </div>
               </div>
             </a>

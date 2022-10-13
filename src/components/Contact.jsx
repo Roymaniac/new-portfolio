@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { contact } from "../info/contactForm";
-import Success from "./Alert/Success";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -9,16 +9,16 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name && !email) {
-      alert("Field is required");
+    if (!name || !email) {
+      toast.error("Name or Email Field is required");
     } else {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: contact({ "form-name": "contact", name, email, message }),
       })
-        .then(() => <Success title="Your form has been Sent!" />)
-        .catch((error) => alert(error));
+        .then(() => toast.success("Your form has been Sent!"))
+        .catch((error) => toast.error(error));
       setName("");
       setEmail("");
       setMessage("");
@@ -42,14 +42,14 @@ const Contact = () => {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">Lagos, Nigeria</p>
+              <p className="mt-1">A wild place called Lagos in Nigeria</p>
             </div>
             <div className="lg:w-1/2 px-5 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
               <a href=" " className="text-indigo-400 leading-relaxed">
-                devroy@gmail.com
+                admin@devroy.tech
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-3">
                 PHONE

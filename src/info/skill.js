@@ -27,6 +27,10 @@ export const skills = [
     id: 7,
     name: "GraphQL",
   },
+  {
+    id: 8,
+    name: "DevOps",
+  },
 ];
 
 export const socialLinks = [
