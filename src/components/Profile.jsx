@@ -1,3 +1,5 @@
+import myPic from "../my_pic.jpg"
+
 function Profile() {
   return (
     <section class="text-gray-400 bg-black body-font">
@@ -13,7 +15,7 @@ function Profile() {
         <div class="lg:w-2/6 md:w-1/2 sm:mx-auto w-full max-w-md overflow-hidden flex flex-col md:ml-auto mt-10 md:mt-0 bg-white rounded-lg shadow-lg dark:bg-gray-800">
           <img
             class="object-cover object-center w-full h-56"
-            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+            src={myPic}
             alt="avatar"
           />
 
