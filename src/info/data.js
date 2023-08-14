@@ -39,4 +39,12 @@ export const projects = [
       image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/ChatCord-App_uYl4LcAaM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663686838842",
       link: "https://node-rtc-production.up.railway.app",
     },
+    {
+      title: "Task Manager",
+      subtitle: "MERN STACK",
+      description:
+        "A simple task manage app built using express and react",
+      image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/task-manager_u-ilanGPV?updatedAt=1691999578415",
+      link: "https://64d9ce88708b800b44d1c38a--candid-cheesecake-5ce7f2.netlify.app",
+    }
   ];
