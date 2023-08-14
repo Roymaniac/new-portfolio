@@ -43,7 +43,7 @@ export const projects = [
       title: "Task Manager",
       subtitle: "MERN STACK",
       description:
-        "A simple task manage app built using express and react",
+        "A simple task manager app built using express and react",
       image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/task-manager_u-ilanGPV?updatedAt=1691999578415",
       link: "https://64d9ce88708b800b44d1c38a--candid-cheesecake-5ce7f2.netlify.app",
     }
