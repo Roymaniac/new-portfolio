@@ -70,7 +70,7 @@ export const projects = [
         "A clone representation of the zuri website",
       image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/zuri_D8BLb-boL.png?updatedAt=1693377905186",
       link: "https://cheerful-yeot-b41b8c.netlify.app",
-    }
+    },
     {
       title: "Task Manager",
       subtitle: "MERN STACK",
