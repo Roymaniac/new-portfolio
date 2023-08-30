@@ -4,7 +4,7 @@ export const projects = [
       subtitle: "MERN STACK",
       description:
         "Projobmatch was born out of the desire to simplify and personalize the job hunting process.",
-      image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/projob-rec_zrPN4U_Pq.webm?updatedAt=1693376971538",
+      image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/projob_Srx3pWNzY.png?updatedAt=1693377905463",
       link: "https://www.projobmatch.com",
     },
     {
@@ -47,6 +47,30 @@ export const projects = [
       image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/ChatCord-App_uYl4LcAaM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663686838842",
       link: "https://node-rtc-production.up.railway.app",
     },
+    {
+      title: "Good Creation",
+      subtitle: "Tailwind CSS",
+      description:
+        "A simple Landing page Good Creation Systems Ltd is a fully Digital solution",
+      image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/goodcreation_ofZ4edVo0.png?updatedAt=1693377904923",
+      link: "https://goodcreation.netlify.app",
+    },
+    {
+      title: "Weather App",
+      subtitle: "Vanilla HTML/ CSS & Open Weather API",
+      description:
+        "A weather app the get the current weather of a particular location",
+      image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/weather-app_Dc3nGhyp9.png?updatedAt=1693377904894",
+      link: "https://wondrous-froyo-8afaf5.netlify.app",
+    },
+    {
+      title: "Zuri Clone",
+      subtitle: "HTML & Bootstrap CSS",
+      description:
+        "A clone representation of the zuri website",
+      image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/zuri_D8BLb-boL.png?updatedAt=1693377905186",
+      link: "https://cheerful-yeot-b41b8c.netlify.app",
+    }
     {
       title: "Task Manager",
       subtitle: "MERN STACK",
