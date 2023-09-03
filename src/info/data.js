@@ -37,7 +37,6 @@ export const projects = [
       description:
         "A Movie search app built with react, useEffect and react-hook",
       image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/Movie-Rated_Sq7C21egH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663686195518",
-      github: "https://github.com/Roymaniac/movie-app",
       link: "https://heroic-lokum-dc803d.netlify.app/",
     },
     {
