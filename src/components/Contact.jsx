@@ -49,7 +49,7 @@ const Contact = () => {
                 EMAIL
               </h2>
               <a href=" " className="text-indigo-400 leading-relaxed">
-                admin@devroy.tech
+                amolojoseph2020@gmail.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-3">
                 PHONE

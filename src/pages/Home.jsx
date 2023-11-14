@@ -1,3 +1,4 @@
+import { projects } from "../info/data";
 import About from "../components/About";
 import Project from "../components/Project";
 import Skillz from "../components/Skillz";
@@ -7,10 +8,10 @@ import Profile from "../components/Profile";
 
 export default function Home() {
   return (
-    <div>
+    <div className="slide-container">
       <About />
       <Profile />
-      <Project />
+      <Project projects={projects} />
       <Skillz />
       <CTA />
       <Contact />

@@ -2,26 +2,26 @@ import myPic from "../my_pic.jpg"
 
 function Profile() {
   return (
-    <section class="text-gray-400 bg-black body-font">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
-        <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-          <h1 class="title-font font-medium text-3xl text-white">ABOUT ME</h1>
-          <p class="leading-relaxed mt-4">
+    <section className="hero-section  mx-auto text-black body-font">
+      <div className="container px-5 py-24 flex mx-auto flex-wrap items-center">
+        <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+          <h1 className="title-font font-medium text-3xl text-black">ABOUT ME</h1>
+          <p className="leading-relaxed mt-4">
             HI, I'm Amolo Joseph a software engineer. Building a successful
             product is a challenge. I am highly energetic in user experience
             design, interfaces and back-end development.
           </p>
         </div>
-        <div class="lg:w-2/6 md:w-1/2 sm:mx-auto w-full max-w-md overflow-hidden flex flex-col md:ml-auto mt-10 md:mt-0 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+        <div className="lg:w-2/6 md:w-1/2 w-full max-w-md overflow-hidden flex flex-col md:ml-auto bg-white rounded-lg shadow-lg dark:bg-black">
           <img
-            class="object-cover object-center w-full h-56"
+            className="object-cover object-center w-full h-56"
             src={myPic}
             alt="avatar"
           />
 
-          <div class="flex items-center px-6 py-3 bg-indigo-700">
+          <div className="flex items-center px-6 py-3 bg-black">
             <svg
-              class="w-6 h-6 text-white fill-current"
+              className="w-6 h-6 text-white fill-current"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -33,22 +33,22 @@ function Profile() {
               />
             </svg>
 
-            <h1 class="mx-3 text-lg font-semibold text-white">Focusing</h1>
+            <h1 className="mx-3 text-lg font-semibold text-white">Focusing</h1>
           </div>
 
-          <div class="px-6 py-4">
-            <h1 class="text-xl font-semibold text-gray-800 dark:text-white">
+          <div className="px-6 py-4">
+            <h1 className="text-xl font-semibold text-gray-800 dark:text-white">
               Amolo Joseph
             </h1>
 
-            <p class="py-2 text-gray-700 dark:text-gray-400">
+            <p className="py-2 text-gray-700 dark:text-gray-400">
               Full Stack Developer / Software Engineer , love hip hop music,
               Tech Guy.
             </p>
 
-            <div class="flex items-center mt-4 text-gray-700 dark:text-gray-200">
+            <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
               <svg
-                class="w-6 h-6 fill-current"
+                className="w-6 h-6 fill-current"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,12 +61,12 @@ function Profile() {
                 />
               </svg>
 
-              <h1 class="px-2 text-sm">devroy.tech</h1>
+              <h1 className="px-2 text-sm">devroy.tech</h1>
             </div>
 
-            <div class="flex items-center mt-4 text-gray-700 dark:text-gray-200">
+            <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
               <svg
-                class="w-6 h-6 fill-current"
+                className="w-6 h-6 fill-current"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,12 +83,12 @@ function Profile() {
                 />
               </svg>
 
-              <h1 class="px-2 text-sm">Lagos, Nigeria</h1>
+              <h1 className="px-2 text-sm">Lagos, Nigeria</h1>
             </div>
 
-            <div class="flex items-center mt-4 text-gray-700 dark:text-gray-200">
+            <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
               <svg
-                class="w-6 h-6 fill-current"
+                className="w-6 h-6 fill-current"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ function Profile() {
                 />
               </svg>
 
-              <h1 class="px-2 text-sm">admin@devroy.tech</h1>
+              <h1 className="px-2 text-sm">amolojoseph2020@gmail.com</h1>
             </div>
           </div>
         </div>

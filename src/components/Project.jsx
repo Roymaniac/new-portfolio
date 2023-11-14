@@ -1,8 +1,26 @@
-import { projects } from "../info/data";
+import { motion } from "framer-motion";
 
-const Project = () => {
+const Project = ({ projects }) => {
   return (
     <section id="projects" className="text-gray-100 bg-black body-font">
+      <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
+        <motion.circle
+          cx="50"
+          cy="50"
+          r="30"
+          pathLength="1"
+          className="bg"
+          initial={{ pathLength: 1 }}
+        />
+        <motion.circle
+          cx="50"
+          cy="50"
+          r="30"
+          pathLength="1"
+          className="indicator"
+          initial={{ pathLength: 0 }}
+        />
+      </svg>
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
           Portfolio
