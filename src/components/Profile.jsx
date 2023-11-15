@@ -2,11 +2,11 @@ import myPic from "../my_pic.jpg"
 
 function Profile() {
   return (
-    <section className="hero-section  mx-auto text-black body-font">
+    <section className="mx-auto text-white body-font">
       <div className="container px-5 py-24 flex mx-auto flex-wrap items-center">
         <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-          <h1 className="title-font font-medium text-3xl text-black">ABOUT ME</h1>
-          <p className="leading-relaxed mt-4">
+          <h1 className="title-font font-medium text-3xl text-white">ABOUT ME</h1>
+          <p className="leading-relaxed my-6">
             HI, I'm Amolo Joseph a software engineer. Building a successful
             product is a challenge. I am highly energetic in user experience
             design, interfaces and back-end development.
@@ -19,9 +19,9 @@ function Profile() {
             alt="avatar"
           />
 
-          <div className="flex items-center px-6 py-3 bg-black">
+          <div className="flex items-center px-6 py-3 bg-white">
             <svg
-              className="w-6 h-6 text-white fill-current"
+              className="w-6 h-6 text-black fill-current"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ function Profile() {
               />
             </svg>
 
-            <h1 className="mx-3 text-lg font-semibold text-white">Focusing</h1>
+            <h1 className="mx-3 text-lg font-semibold text-black">Focusing</h1>
           </div>
 
           <div className="px-6 py-4">

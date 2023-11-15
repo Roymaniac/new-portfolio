@@ -23,18 +23,18 @@ const About = () => {
 
   return (
     <>
-      <section className="hero-section flex justify-center items-center p-20 text-black">
-        <div className="flex-col text-center justify-center">
+      <section className="hero-section flex justify-center items-center p-10 text-black">
+        <div className="flex-col text-center">
           <div className="flex-1 mb-5">
             <h3 className="title mb-5">Devroy</h3>
-            <h3 className="font-light text-xl xl:text-4xl mb-10">Full Stack Developer</h3>
+            <h3 className="font-light text-red-600 text-xl xl:text-4xl mb-10">Full Stack Developer</h3>
             {/* <h1 className="sm:text-4xl text-3xl">
               We Craft Stunning <br />
               Digital Experiences.
             </h1> */}
 
-            <div className="flex-1 mt-40">
-              <a className="button px-3 rounded-xl bg-black text-white mt-12 animate-bounce hover:bg-white hover:text-black"
+            <div className="flex-none mt-40">
+              <a className="button border-transparent px-3 rounded-xl mx-auto bg-red-600 hover:ring-0 text-white mt-12 animate-bounce hover:bg-white hover:text-black"
                 href=" "
                 onClick={handleDownload} rel="noreferrer">
                 Download CV
@@ -44,14 +44,15 @@ const About = () => {
                     display: "inline-block",
                     padding: "2px",
                     margin: "8px",
+                    animation: "pulse 1.5s linear infinite",
                   }}
                 />
               </a>
             </div>
           </div>
-          <div className="flex absolute z-30 md:right-40 md:top-40 xl:right-40 xl:top-64 animate-bounce">
+          <div className="flex absolute z-10 md:right-40 md:top-40  animate-bounce">
             <motion.div
-              className="w-24 h-24 bg-black rounded-full"
+              className="w-24 h-24 bg-red-600 rounded-full"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             ></motion.div>

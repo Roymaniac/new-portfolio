@@ -25,8 +25,8 @@ body {
   transform: translate(-50%, -50%);
   font-size: 180px;
   color: transparent;
-   -webkit-text-stroke: 2px #000000;
-  background-image: linear-gradient(#000000, #000000);
+   -webkit-text-stroke: 2px #686767;
+  background-image: linear-gradient(#f51414, #f51414);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
@@ -63,7 +63,7 @@ body {
   }
 
   .hero-section {
-      height: 100vh;
+      max-height: 100vh;
       width: 100%;
 
   }
@@ -73,7 +73,9 @@ body {
   .title {
     font-size: 240px;
     align-items: center;
+    background-position: -820px 0;
   }
+
 }
 
 .slide-container {

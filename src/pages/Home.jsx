@@ -8,7 +8,7 @@ import Profile from "../components/Profile";
 
 export default function Home() {
   return (
-    <div className="slide-container">
+    <div className="">
       <About />
       <Profile />
       <Project projects={projects} />
