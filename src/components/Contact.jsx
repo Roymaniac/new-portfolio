@@ -86,7 +86,7 @@ const Contact = () => {
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full bg-gray-50 rounded border border-gray-700 focus:border-black  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-50 rounded text-black border border-gray-700 focus:border-black  text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -99,7 +99,7 @@ const Contact = () => {
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-gray-50 rounded border border-gray-700 focus:border-black  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-50 rounded border text-black border-gray-700 focus:border-black  text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -114,7 +114,7 @@ const Contact = () => {
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full bg-gray-50 rounded border border-gray-700 focus:border-black  h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-50 rounded border text-black border-gray-700 focus:border-black  h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>
           <button

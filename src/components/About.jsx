@@ -1,6 +1,7 @@
 import { FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { resume_url } from "../info/data"
+import FloatingDots from "./UI/FloatingDots";
 
 const About = () => {
   const fileUrl = resume_url[0].url;
@@ -34,7 +35,7 @@ const About = () => {
             </h1> */}
 
             <div className="flex-none mt-40">
-              <a className="button border-transparent px-3 rounded-xl mx-auto bg-red-600 hover:ring-0 text-white mt-12 animate-bounce hover:bg-white hover:text-black"
+              <a className="button border-transparent px-3 rounded-xl mx-auto bg-black hover:ring-0 text-white mt-12  hover:bg-red-600 hover:text-white transition ease-in-out duration-500"
                 href=" "
                 onClick={handleDownload} rel="noreferrer">
                 Download CV
@@ -44,20 +45,13 @@ const About = () => {
                     display: "inline-block",
                     padding: "2px",
                     margin: "8px",
-                    animation: "pulse 1.5s linear infinite",
+                    animation: "pulse 1.8s linear infinite",
                   }}
                 />
               </a>
             </div>
           </div>
-          <div className="flex absolute z-10 md:right-40 md:top-40  animate-bounce">
-            <motion.div
-              className="w-24 h-24 bg-red-600 rounded-full"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            ></motion.div>
-          </div>
-
+          <FloatingDots />
         </div>
       </section >
     </>
