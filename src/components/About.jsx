@@ -1,4 +1,4 @@
-import FloatingDots from "../components/ui/FloatingDots";
+import FloatingDots from "./FloatingDots";
 import { FaDownload } from "react-icons/fa";
 import { resume_url } from "../info/data"
 
