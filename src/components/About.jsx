@@ -1,7 +1,6 @@
 import { FaDownload } from "react-icons/fa";
-import { motion } from "framer-motion";
 import { resume_url } from "../info/data"
-import FloatingDots from "./UI/FloatingDots";
+import FloatingDots from "./ui/FloatingDots";
 
 const About = () => {
   const fileUrl = resume_url[0].url;
