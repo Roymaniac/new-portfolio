@@ -1,6 +1,6 @@
+import FloatingDots from "./ui/FloatingDots";
 import { FaDownload } from "react-icons/fa";
 import { resume_url } from "../info/data"
-import FloatingDots from "./ui/FloatingDots";
 
 const About = () => {
   const fileUrl = resume_url[0].url;
