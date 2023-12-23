@@ -72,6 +72,14 @@ export const projects = [
     link: "https://cheerful-yeot-b41b8c.netlify.app",
   },
   {
+    title: "Manage",
+    subtitle: "TailwindCSS",
+    description:
+      "Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.",
+    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/Manage_or_E2Gjb9?updatedAt=1703373880434",
+    link: "https://lucky-kheer-b3f314.netlify.app/",
+  },
+  {
     title: "Task Manager",
     subtitle: "MERN STACK",
     description:
