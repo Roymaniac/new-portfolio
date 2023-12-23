@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "MERN STACK",
     description:
       "Projobmatch was born out of the desire to simplify and personalize the job hunting process.",
-    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/projob_Srx3pWNzY.png?updatedAt=1693377905463",
+    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/Projobmatch_6rTJ8VK3e.png?updatedAt=1703374262222",
     link: "https://www.projobmatch.com",
   },
   {
