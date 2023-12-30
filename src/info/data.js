@@ -44,8 +44,8 @@ export const projects = [
     subtitle: "Node/Socket.io/Vanilla HTML & CSS",
     description:
       "ChatCord is a room messaging platform built with node js and socket.io",
-    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/ChatCord-App_uYl4LcAaM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663686838842",
-    link: "https://node-rtc-production.up.railway.app",
+    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/ChatCord-App_tZDMD00wd.png?updatedAt=1703939106844",
+    link: "https://node-rtc.onrender.com/index.html",
   },
   {
     title: "Good Creation",
