@@ -34,7 +34,7 @@ const About = () => {
             </h1> */}
 
             <div className="flex-none mt-40">
-              <a className="button border-transparent px-3 rounded-xl mx-auto bg-black hover:ring-0 text-white mt-12  hover:bg-red-600 hover:text-white transition ease-in-out duration-500"
+              <a className="btn btn-sm border-transparent px-3 h-16 rounded-xl mx-auto bg-black hover:ring-0 text-white mt-12 hover:bg-white hover:text-gray-900 transition ease-in-out duration-500"
                 href=" "
                 onClick={handleDownload} rel="noreferrer">
                 Download CV

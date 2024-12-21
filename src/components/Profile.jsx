@@ -1,4 +1,5 @@
 import myPic from "../my_pic.jpg"
+import { bio } from "../info/bio";
 
 function Profile() {
   return (
@@ -7,44 +8,28 @@ function Profile() {
         <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
           <h1 className="title-font font-medium text-3xl text-white">ABOUT ME</h1>
           <p className="leading-relaxed my-6">
-            HI, I'm Amolo Joseph a software engineer. Building a successful
-            product is a challenge. I am highly energetic in user experience
-            design, interfaces and back-end development.
+          Hi, I'm a passionate full-stack developer with expertise in building dynamic and scalable web applications. 
+          With a strong foundation in backend technologies like Laravel, Django and Node.js, and frontend frameworks such as 
+          Vue.js, React and React Native, I specialize in crafting solutions that are both functional and user-friendly.
+
+          I thrive on solving complex problems, mentoring teammates, and delivering high-quality code. 
+          From developing real-time applications to creating innovative features, I’m dedicated to building tools 
+          that make a difference. When I’m not coding, you can find me exploring new technologies or refining my 
+          skills to stay ahead in the ever-evolving tech landscape.
           </p>
         </div>
         <div className="lg:w-2/6 md:w-1/2 w-full max-w-md overflow-hidden flex flex-col md:ml-auto bg-white rounded-lg shadow-lg dark:bg-black">
-          <img
-            className="object-cover object-center w-full h-56"
-            src={myPic}
-            alt="avatar"
-          />
-
-          <div className="flex items-center px-6 py-3 bg-white">
-            <svg
-              className="w-6 h-6 text-black fill-current"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M17 21C15.8954 21 15 20.1046 15 19V15C15 13.8954 15.8954 13 17 13H19V12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12V13H7C8.10457 13 9 13.8954 9 15V19C9 20.1046 8.10457 21 7 21H3V12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V21H17ZM19 15H17V19H19V15ZM7 15H5V19H7V15Z"
-              />
-            </svg>
-
-            <h1 className="mx-3 text-lg font-semibold text-black">Focusing</h1>
+          <div
+            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+          >
+            <img src={myPic} alt='avatar' className="w-full h-auto object-cover" />
+            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4">
+              <h3 className="text-white font-semibold">{bio.name}</h3>
+              <p className="text-gray-300">{bio.shortDesc}</p>
+            </div>
           </div>
 
           <div className="px-6 py-4">
-            <h1 className="text-xl font-semibold text-gray-800 dark:text-white">
-              Amolo Joseph
-            </h1>
-
-            <p className="py-2 text-gray-700 dark:text-gray-400">
-              Full Stack Developer / Software Engineer , love hip hop music,
-              Tech Guy.
-            </p>
 
             <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
               <svg
@@ -61,7 +46,7 @@ function Profile() {
                 />
               </svg>
 
-              <h1 className="px-2 text-sm">devroy.tech</h1>
+              <h1 className="px-2 text-sm">{bio.company}</h1>
             </div>
 
             <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
@@ -83,7 +68,7 @@ function Profile() {
                 />
               </svg>
 
-              <h1 className="px-2 text-sm">Lagos, Nigeria</h1>
+              <h1 className="px-2 text-sm">{bio.location}</h1>
             </div>
 
             <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
@@ -100,7 +85,7 @@ function Profile() {
                 />
               </svg>
 
-              <h1 className="px-2 text-sm">amolojoseph2020@gmail.com</h1>
+              <h1 className="px-2 text-sm">{bio.email}</h1>
             </div>
           </div>
         </div>

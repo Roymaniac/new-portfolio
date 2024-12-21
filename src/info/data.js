@@ -4,8 +4,15 @@ export const projects = [
     subtitle: "MERN STACK",
     description:
       "Projobmatch was born out of the desire to simplify and personalize the job hunting process.",
-    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/Projobmatch_6rTJ8VK3e.png?updatedAt=1703374262222",
+    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/projob_JREbWxmOt.png?updatedAt=1734813311332",
     link: "https://www.projobmatch.com",
+  },
+  {
+    title: "BOK Integrated Solutions",
+    subtitle: "Bootstrap CSS",
+    description: "Bok Integrated Limited is a dynamic and innovative company specializing in Building Construction, Fiber Installation, and Geographic Information Systems (GIS). Established with a commitment to excellence, we have built a reputation for delivering high-quality services that meet the diverse needs of our clients.",
+    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/bok_a5UzimOJp.png?updatedAt=1734813131377",
+    link: "https://bokintegrated.netlify.app/",
   },
   {
     title: "Enrolled Agents",
@@ -52,7 +59,7 @@ export const projects = [
     subtitle: "Tailwind CSS",
     description:
       "A simple Landing page Good Creation Systems Ltd is a fully Digital solution",
-    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/goodcreation_ofZ4edVo0.png?updatedAt=1693377904923",
+    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/goodcreation_Z2HYeqRcz.png?updatedAt=1734813649380",
     link: "https://goodcreation.netlify.app",
   },
   {
@@ -68,7 +75,7 @@ export const projects = [
     subtitle: "HTML & Bootstrap CSS",
     description:
       "A clone representation of the zuri website",
-    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/zuri_D8BLb-boL.png?updatedAt=1693377905186",
+    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/zuri_3s5vViLTE.png?updatedAt=1734813649394",
     link: "https://cheerful-yeot-b41b8c.netlify.app",
   },
   {
@@ -92,6 +99,6 @@ export const projects = [
 
 export const resume_url = [
   {
-    url: "https://drive.google.com/file/d/19iS3HJpJR2T9GHypXNK_uF2yFmULwE04/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1FitMqarKN_aiX13rL0g8DDZ9jhe6gLDw/view?usp=sharing",
   }
 ]

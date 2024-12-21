@@ -1,7 +1,7 @@
 import { projects } from "../info/data";
 import About from "../components/About";
 import Project from "../components/Project";
-import Skillz from "../components/Skillz";
+import Skill from "../components/Skill";
 import Contact from "../components/Contact";
 import CTA from "../components/CTA";
 import Profile from "../components/Profile";
@@ -12,7 +12,7 @@ export default function Home() {
       <About />
       <Profile />
       <Project projects={projects} />
-      <Skillz />
+      <Skill />
       <CTA />
       <Contact />
     </div>
