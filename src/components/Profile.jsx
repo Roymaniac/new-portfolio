@@ -8,9 +8,9 @@ function Profile() {
         <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
           <h1 className="title-font font-medium text-3xl text-white">ABOUT ME</h1>
           <p className="leading-relaxed my-6">
-          Hi, I'm a passionate full-stack developer with expertise in building dynamic and scalable web applications. 
+          Hi, I'm a passionate full-stack {bio.title} with expertise in building dynamic and scalable web applications. 
           With a strong foundation in backend technologies like Laravel, Django and Node.js, and frontend frameworks such as 
-          Vue.js, React and React Native, I specialize in crafting solutions that are both functional and user-friendly.
+          Vue.js, React and React Native, I specialize in crafting functional and user-friendly solutions.
 
           I thrive on solving complex problems, mentoring teammates, and delivering high-quality code. 
           From developing real-time applications to creating innovative features, I’m dedicated to building tools 
