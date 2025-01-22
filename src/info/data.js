@@ -99,6 +99,6 @@ export const projects = [
 
 export const resume_url = [
   {
-    url: "https://drive.google.com/file/d/1FitMqarKN_aiX13rL0g8DDZ9jhe6gLDw/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1bzpH2DBTyiZHazsKK0-1zDEq1ZdNJl4N/view?usp=sharing",
   }
 ]
