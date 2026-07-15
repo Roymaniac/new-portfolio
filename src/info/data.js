@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "Data Dashboard",
+    subtitle: "React & TailwindCSS",
+    description:"",
+    image: "https://ik.imagekit.io/5uidldt19f6/portfolio-files/data-dashboard_Li--wpu76.png",
+    link: "https://ubiquitous-pegasus-4f0d0f.netlify.app/",
+  },
+  {
     title: "Crown Shortlet Apartment",
     subtitle: "React & TailwindCSS",
     description:
