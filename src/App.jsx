@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="slide-container bg-black body-font">
+        <div className="bg-black body-font min-h-screen">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
